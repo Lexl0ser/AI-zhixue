@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Noto Serif SC", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#FDFCF9] text-[#2D2D2D] antialiased;
+    font-size: 18px; /* Larger base font for readability */
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-[#2D5A27] text-white px-8 py-4 rounded-full font-medium transition-all hover:bg-[#1E3D1A] hover:scale-105 active:scale-95 shadow-md;
+}
+
+.btn-secondary {
+  @apply bg-white text-[#2D5A27] border-2 border-[#2D5A27] px-8 py-4 rounded-full font-medium transition-all hover:bg-[#F5F7F5] active:scale-95;
+}
+
